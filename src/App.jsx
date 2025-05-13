@@ -1,16 +1,16 @@
-
-import Banner from "./components/Banner/Banner"
-import Navbar from "./components/Navbar/Navbar"
+import Banner from "./components/Banner/Banner";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header"
 
 function App() {
-  
-
   return (
     <>
-    <Navbar></Navbar>
-    <Banner></Banner>
+      <Header>
+        <Navbar></Navbar>
+        <Banner></Banner>
+      </Header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

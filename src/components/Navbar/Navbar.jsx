@@ -4,7 +4,7 @@ import Container from"../Layout/Container"
 
 const Navbar = () => {
   return (
-    <div className="bg-primary py-8">
+    <div className="py-8 px-8">
       
         <Container>
         <div className="flex justify-between items-center">
