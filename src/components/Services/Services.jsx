@@ -7,7 +7,7 @@ import Services4 from '../../assets/s4.png'
 import Flex from '../Layout/Flex/Flex'
 import Arrow from '../../assets/sarrow.png'
 
-const items = [
+const item = [
   {
     id: 1,
     img: Services1,
@@ -65,7 +65,7 @@ const Services = () => {
             </Flex> */}
          <Flex className=' gap-x-[30px] mt-[80px] mb-[80px] justify-between items-center ' >
             {
-                items.map((item)=>(
+                item.map((item)=>(
                     <div key={item.id} className='bg-[#DCE7FE] rounded-2xl pb-[36px]'>
              <div className='w-[330px] ml-[36px] relative  '>
                 <img className='w-[92px] mt-[36px] ' src={item.img} alt="" />
@@ -79,6 +79,11 @@ const Services = () => {
             },
             </Flex>
 
+              <div className='flex justify-center mt-[100px]'>
+               <a
+             className='text-primary font-secondary font-medium text-[18px] leading-[20px] px-[48px] py-[20px] border border-[#3639A4] rounded-2xl text-center'
+             href="" > View More </a>
+              </div>
 
         </Container>
       </div>
