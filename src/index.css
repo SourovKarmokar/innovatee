@@ -16,3 +16,9 @@
     --color-discription: #645E76;
     --color-integrations : #FF7364;
 }
+.slick-slider .slick-slide .slick-current {
+    overflow: visible !important;
+}
+ .slick-track {
+   padding-top:  100px;
+}

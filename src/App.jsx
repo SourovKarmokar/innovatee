@@ -7,6 +7,8 @@ import Integrations from "./components/Integrations/Integrations";
 import Services from "./components/Services/Services"
 import Customers from "./components/Customers/Customers";
 import Pricing from "./components/Pricing/Pricing";
+import Testimonial from "./components/Testimonial/Testimonial";
+import TestimonialSlider from "./components/Testimonial/TestimonialSlider";
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
         <Services />
         <Customers />
         <Pricing />
+        <Testimonial />
+        
     </>
   );
 }
