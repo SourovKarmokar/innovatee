@@ -9,6 +9,7 @@ import Customers from "./components/Customers/Customers";
 import Pricing from "./components/Pricing/Pricing";
 import Testimonial from "./components/Testimonial/Testimonial";
 import TestimonialSlider from "./components/Testimonial/TestimonialSlider";
+import Query from "./components/Query/Query";
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Customers />
         <Pricing />
         <Testimonial />
+        <Query />
         
     </>
   );
