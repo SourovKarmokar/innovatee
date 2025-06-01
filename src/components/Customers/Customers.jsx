@@ -9,10 +9,10 @@ const Customers = () => {
        <Container>
           <img className='mt-[147px] z-10' src={icon} alt="" />
           <Flex className="items-center justify-between flex-wrap gap-10">
-            <div className='absolute top-[192px] left-[461px]'>
+            <div className='absolute top-[192px] left-[276px]'>
             <img src={icon1} alt="" />
           </div>
-          <div className='w-[680px] z-99 absolute top-[223px] right-[467px]'>
+          <div className='w-[680px] z-99 absolute top-[223px] right-[273px]'>
             <h4 className='font-primary font-bold text-[44px] leading-auto text-white w-[554px] ' >Trusted by 35,000+ happy customers.</h4>
             <Flex className='justify-between items-center mt-[65px]'>
                 <div>

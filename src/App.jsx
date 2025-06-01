@@ -10,6 +10,7 @@ import Pricing from "./components/Pricing/Pricing";
 import Testimonial from "./components/Testimonial/Testimonial";
 import TestimonialSlider from "./components/Testimonial/TestimonialSlider";
 import Query from "./components/Query/Query";
+import Futter from "./components/Futter/Futter";
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <Pricing />
         <Testimonial />
         <Query />
+        <Futter/>
         
     </>
   );
