@@ -67,7 +67,7 @@ const Services = () => {
             {
                 item.map((item)=>(
                     <div key={item.id} className='bg-[#DCE7FE] rounded-2xl pb-[36px] group duration-300 ease-in hover:bg-primary'>
-             <div className='group-hover:text-white duration-300 ease-in w-[330px] ml-[36px] relative  '>
+             <div className='group-hover:text-white duration-300 ease-in w-[300px] ml-[36px] relative  '>
                 <img className='group-hover:text-white duration-300 ease-in w-[92px] mt-[36px] ' src={item.img} alt="" />
                 <h4 className='group-hover:text-white duration-300 ease-in font-primary font-bold text-[22px] text-title leading-[34px] w-[258px] mt-[26px] ' >{item.title}</h4>
                 <p className='group-hover:text-white duration-300 ease-in font-secondary font-normal text-[16px] leading-[26px] w-[258px] mt-[8px]'>{item.description}</p>
