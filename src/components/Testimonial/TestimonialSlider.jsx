@@ -39,11 +39,12 @@ function TestimonialSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+     autoplay: true,
   };
   return (
     
-      <div className='w-[700px]'>
+      <div className='w-[400px] md:w-[700px]'>
         <Slider {...settings}>
         <div>
             <div className='relative w-[687px] bg-white pt-[64px] pb-[60px] px-[60px] rounded-[20px]'>
