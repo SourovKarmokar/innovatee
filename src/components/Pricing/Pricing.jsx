@@ -52,7 +52,7 @@ const Pricing = () => {
         <section className='py-[140px]'>
             <Container>
                 <div className='text-center'>
-                    <h2 className='w-[624px] font-bold text-[46px] text-title font-primary m-auto
+                    <h2 className='md:w-[624px] font-bold text-[34px] md:text-[46px] text-title font-primary m-auto
                     leading-[56px]'>Pricing Designed To Fit Your Business</h2>
                     <p className='font-primary font-bold text-[24px] text-primary '>Monthly</p>
                 </div>

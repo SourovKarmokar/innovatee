@@ -35,29 +35,40 @@ function TestimonialSlider() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-     autoplay: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          autoplay: true,
+        }
+      }
+    ]
+
+
   };
   return (
     
-      <div className='w-[400px] md:w-[700px]'>
+      <div className='w-[300px] md:w-[700px]'>
         <Slider {...settings}>
         <div>
             <div className='relative w-[687px] bg-white pt-[64px] pb-[60px] px-[60px] rounded-[20px]'>
                             <div className='absolute top-[-80px] left-[48px] w-[124px]
                             h-[124px] bg-gray-300 rounded-full border-4 border-[#F4FAFA]'></div>
-                    <p className='w-[567px] font-secondary text-[22px] leading-[44px] text-discription '>“Wow. Amazing company amazing Expert Manager. They know how to get things done when it comes to online trading. </p>
+                    <p className='w-full md:w-[567px] font-secondary text-full md:text-[22px] leading-[44px] text-discription text-center md:text-left '>“Wow. Amazing company amazing Expert Manager. They know how to get things done when it comes to online trading. </p>
                     <Flex className='  w-[567px] justify-between mt-[37px]'>
                         <div>
                             <h5 className='font-primary text-2xl font-bold text-[#30344E]'>Robert Fox</h5>
                         <p className='font-secondary text-base mt-1 text-discription'>Digital Marketer</p>
                         </div>
                         <div>
-                           <div className='flex items-end'>
+                           <div className='  md:justify-center md:items-center md:flex items-end '>
                             <div><FaStar size={25} className='text-[#FDB400]'/></div>
                             <div><FaStar size={25} className='text-[#FDB400]'/></div>
                             <div><FaStar  size={25}className='text-[#FDB400]'/></div>

@@ -44,13 +44,18 @@ const Content = () => {
               <p className='font-secondary  text-lg leading-[32px] text-description'>This quickstart shows you how to use Identity Platform to sign in a user with an email and password. </p>
             </div> */}
 
-            <div className='md:flex justify-around items-center text-center mt-[116px]'>
+            <div className='md:mt-[116px] flex flex-col md:flex-row justify-around items-center text-center md:items-center md:gap-[40px]'>
                  {
            item.map((item, index) => (
-            <div key={`First-${index}`} className='w-[300px] flex flex-col items-center'>
+            <div key={`First-${index}`} className=' w-[300px] flex flex-col items-center'>
               <img className='w-[110px] my-5 md:my-0' src={item.img} alt="#" />
-              <h4 className='font-primary font-bold text-[24px] leading-[36px] text-title'>{item.titel}</h4>
-              <p className='font-secondary text-lg leading-[32px] text-description'>{item.description}</p>
+              <h4 className='w-[250px] md:w-full md:font-primary font-bold text-[20px] md:text-0 md:text-[24px] leading-[20px] md:leading-[36px] text-title'>
+            {item.titel}
+              </h4>
+              <p className='w-[300px] md:w-full mt-[10px] md:mt- md:font-secondary text-lg md:leading-[32px] text-description'>
+             {item.description}
+             </p>
+
             </div>
           ))
         }

@@ -63,7 +63,7 @@ const Services = () => {
             </div>
            </div>
             </Flex> */}
-         <Flex className=' gap-x-[30px] mt-[80px] mb-[80px] justify-between items-center ' >
+         <Flex className='gap-[30px]  mt-[80px] mb-[80px] flex flex-col md:flex-row md:justify-between md:items-center py-[0px] md:py-0' >
             {
                 item.map((item)=>(
                     <div key={item.id} className='bg-[#DCE7FE] rounded-2xl pb-[36px] group duration-300 ease-in hover:bg-primary'>
@@ -79,9 +79,9 @@ const Services = () => {
             },
             </Flex>
 
-              <div className='flex justify-center mt-[100px]'>
+              <div className='flex justify-center md:justify-center'>
                <a
-             className='text-primary font-secondary font-medium text-[18px] leading-[20px] px-[48px] py-[20px] border border-[#3639A4] rounded-2xl text-center'
+             className='text-primary font-secondary font-medium text-[18px] leading-[20px] px-[48px] py-[20px] border border-[#3639A4] rounded-2xl text-center flex items-center md:flex-row'
              href="" > View More </a>
               </div>
 

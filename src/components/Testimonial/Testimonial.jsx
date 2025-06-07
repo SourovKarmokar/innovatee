@@ -6,14 +6,19 @@ import TestimonialSlider from './TestimonialSlider';
 import "slick-carousel/slick/slick.css";
 const Testimonial = () => {
     return (
-        <section className='bg-[#F4FAFA] py-[200px]' >
+        <section className='bg-[#F4FAFA] py-[20px] md:py-[200px]' >
             <Container>
-                <Flex className='flex-col md:flex-row items-center justify-between'>
-                    <div>
-                    <h2 className='w-[594px] font-primary font-bold text-[46px] leading-[58px] text-title'>What they are talking
-                        about us?</h2>
-                    <p className='w-[503px] font-secondary text-lg text-[18px] mt-[20px] mb-[40px] leading-[32px] text-discription'>testimonials are evidence of customers talking about your product or service in their own words. At their best, they are authentic, descriptive.</p>
+                <Flex className="flex flex-col md:flex-row justify-center md:justify-between items-center">
+                 <div>
+                <h2 className="w-[350px] md:w-[594px] font-primary font-bold text-[34px] md:text-[46px] md:leading-[58px] text-title text-center md:text-left">
+                What they are talking about us?
+                </h2>
+                 <p className="md:w-[503px] font-secondary text-lg text-[18px] mt-[20px] mb-[40px] leading-[32px] text-discription text-center md:text-left">
+                 Testimonials are evidence of customers talking about your product or service in their own words. At their best, they are authentic, descriptive.
+                </p>
+                 <div className='flex justify-center md:flex-none md:justify-start'>
                     <a className="font-secondary text-lg font-medium py-5 px-12 bg-primary rounded-[6px] text-white ">Purchase Now</a>
+                 </div>
                    <div className=' mt-[85px] w-[350px] flex justify-between items-center'>
                      <div className='relative  '>
                         <div className='w-[58px] h-[58px] rounded-full bg-[#C4C4C4] border-white'></div>
@@ -22,7 +27,7 @@ const Testimonial = () => {
                         <div className='absolute top-0 left-[105px] w-[58px] h-[58px] rounded-full bg-[#C4C4C4] border-2 border-white'></div>
                     </div>
                     <div className='mt-80px'>
-                        <Flex className='items-center' >
+                        <Flex className='flex flex-col items-center md:flex-row md:items-center' >
                         
                         <p className='relative after:absolute after:content-[] after:top-[5px] after:right-[-12px] after:w-[4px] after:h-[16px] after:bg-amber-500 font-primary font-bold text-[#52C586] text-2xl'>4.5</p>
                         <div className='flex ml-[22px]'>
