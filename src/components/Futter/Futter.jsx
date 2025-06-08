@@ -13,13 +13,15 @@ import sent from '../../assets/sentfutter.png';
 
 const Futter = () => {
   return (
-    <div className='mt-[124px]'>
+    <div className='mt-[60px] md:mt-[124px]'>
       <Container>
-        <Flex>
-         <div className="w-[263px]">
-            <img src={futer} alt="" />
-            <p className='w-[263px] font-secondary font-[16px] leading-[28px] text-[#645E76] mt-[26px] mb-[24px]'>Build a modern and creative website with Innovate.</p>
-            <Flex className='justify-between items-center '>
+        <Flex className='flex flex-col items-center md:items-start md:flex-row md:justify-between lg:items-start gap-8 md:gap-4'>
+         <div className="w-full md:w-[263px] ">
+            <div className='w-full md:w-[263px] flex flex-col items-center md:items-start' >
+              <img  src={futer} alt="Company logo" />
+            </div>
+            <p className=' md-full md:w-[263px] font-secondary font-[16px] leading-[28px] text-[#645E76] mt-[26px] mb-[24px] text-center md:text-left'>Build a modern and creative website with Innovate.</p>
+            <Flex className='justify-between items-center md:justify-start gap-4 w-full  '>
                <div>
                 <div>
                    <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#EEEEEE]">
@@ -39,30 +41,44 @@ const Futter = () => {
                </div>
             </Flex>
         </div>
-        <div className='ml-[199px] mr-[83px]  flex items-center justify-between'>
-          <div className="w-[103px]  flex flex-wrap">
-              <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Product</h1>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Landingpages</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Pricing</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Benefits</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Features</a>
-        </div>
-            <div className="w-[103px] ml-[84px] mr-[81px]  flex flex-wrap"> 
-              <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Company</h1>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]' href="">About</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Privacy Policy</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Terms & Conditions</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Partners</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Contact</a>
-        </div>
-        <div className="w-[103px] mr-[83px] flex flex-wrap">
-             <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Resources</h1>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Guides and resources</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Blog</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Tools</a>
-              <a className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'  href="">Support</a>
-        </div>
-        </div>
+        <div className='lg:ml-[199px] lg:mr-[83px] flex flex-col items-center md:flex-row md:justify-between w-full lg:w-auto lg:items-start'>
+  {/* First Two Columns Container */}
+  <div className='flex flex-col md:flex-row items-center w-full lg:contents'>
+    {/* Product Column */}
+    <div className="w-full text-center md:text-left lg:w-[103px] mb-8 md:mb-0 lg:mb-0">
+      <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Product</h1>
+      <div className="flex flex-col items-center md:items-start">
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Landingpages</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Pricing</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Benefits</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76]' href="">Features</a>
+      </div>
+    </div>
+
+    {/* Company Column */}
+    <div className="w-full text-center md:text-left lg:w-[103px] my-8 md:my-0 lg:my-0 lg:mx-[80px]">
+      <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Company</h1>
+      <div className="flex flex-col items-center md:items-start">
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">About</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Privacy Policy</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Terms & Conditions</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Partners</a>
+        <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76]' href="">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  {/* Resources Column (3rd div) - Centered only on mobile */}
+  <div className="w-full text-center lg:text-left lg:w-[103px] lg:mr-[83px]">
+    <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Resources</h1>
+    <div className="flex flex-col items-center lg:items-start">
+      <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Guides and resources</a>
+      <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Blog</a>
+      <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76] mb-[12px]' href="">Tools</a>
+      <a className='font-secondary font-normal text-[16px] leading-[26px] text-[#645E76]' href="">Support</a>
+    </div>
+  </div>
+</div>
         <div className="relative w-[285px]  flex flex-wrap">
              <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Get Latest Updates</h1>
               <p className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'>Subscribe to our newsletter and get many interesting things every week</p>
