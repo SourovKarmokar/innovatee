@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import Container from "../Layout/Container"
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import ScrollSpy from "react-scrollspy-navigation";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
@@ -13,7 +14,8 @@ const Navbar = () => {
       <div className=" relative top-0 left-0 py-8 px-8 w-full ">
       <Container>
         <div className="md:flex justify-between items-center">
-          <div className="flex items-center justify-between">
+          <ScrollSpy activeClass="">
+              <div className="flex items-center justify-between">
             <div>
               <img src={logo} alt="#logo" />
             </div>
@@ -21,13 +23,15 @@ const Navbar = () => {
               <FaBars onClick={handleClick} className=" text-white" />
             </div>
           </div>
+          </ScrollSpy>
+          
           <div className="hidden md:flex  items-center md:gap-x-6 lg:gap-x-12">
             <ul className="md:flex gap-x-[50px] font-secondary text-lg font-medium text-white">
-              <li><a href="">Home</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">Pages</a></li>
-              <li><a href="">Blog</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#pages">Pages</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
 
@@ -41,7 +45,7 @@ const Navbar = () => {
       </Container>
       {
           show && (
-            <div className="fixed inset-0 z-[999] bg-blue-300 flex flex-col items-center justify-center px-6">
+            <div className="fixed inset-0 z-[999] bg-primary flex flex-col items-center justify-center px-6">
           {/* Close Icon */}
           <button
             onClick={() => setShow(false)}
@@ -52,7 +56,7 @@ const Navbar = () => {
           </button>
 
           {/* Mobile Nav Links */}
-          <ul className="flex flex-col items-center gap-y-6 text-black font-secondary text-lg font-medium">
+          <ul className="flex flex-col items-center gap-y-6  text-white font-secondary text-lg font-medium">
             <li><a href="">Home</a></li>
             <li><a href="">Features</a></li>
             <li><a href="">Service</a></li>
@@ -62,8 +66,8 @@ const Navbar = () => {
 
           {/* Login/Register for Mobile */}
           <div className="mt-10 flex flex-col items-center gap-y-4">
-            <a className="text-black font-medium cursor-pointer">Login</a>
-            <a className="py-3 px-10 bg-secondary rounded-[6px] text-white font-medium cursor-pointer">
+            <a className="text-white font-medium cursor-pointer">Login</a>
+            <a className="py-3 px-10  bg-secondary rounded-[6px] text-white font-medium cursor-pointer">
               Register
             </a>
           </div>

@@ -20,7 +20,7 @@ const Features = () => {
 
   ]
   return (
-    <div className='pb-[66px]'>
+    <div id='features' className='pb-[66px]'>
       <Container>
         <div className='md:flex  justify-between'>
           <div>

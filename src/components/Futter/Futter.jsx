@@ -79,12 +79,12 @@ const Futter = () => {
     </div>
   </div>
 </div>
-        <div className="relative w-[285px]  flex flex-wrap">
+        <div className="relative w-[285px] flex flex-col items-center justify-center md:flex-row md:justify-start md:flex flex-wrap ">
              <h1 className='font-secondary font-medium text-[18px] leading-[32px] text-[#2C2643] mb-[18px]'>Get Latest Updates</h1>
-              <p className='font-secondary font-normal text-[16px] leading-[26px]text-[#645E76] mb-[12px]'>Subscribe to our newsletter and get many interesting things every week</p>
-              <input type="text" className='  pt-[12px]pb-[12px] pl-[18px] pr-[148px] border-[#D2D2D2] border-[1px] rounded-[5px]' placeholder='Your Email Address'    />
+              <p className='font-secondary font-normal  md:text-[16px] leading-[26px]text-[#645E76] mb-[12px]'>Subscribe to our newsletter and get many interesting things every week</p>
+              <input type="text" className=' hidden md:block  pt-[15px] pl-[10px] pr-[148px] border-[#D2D2D2] border-[5px] rounded-[5px]' placeholder='Your Email Address'    />
              <div>
-               <img src={sent}  className='absolute  top-[180px]  right-[-39px] w-[36px] h-[36px]' alt="" />
+               <img src={sent}  className=' hidden  md:block absolute  top-[116px]  right-[-39px] w-[36px] h-[36px]' alt="" />
              </div>
         </div>
          

@@ -6,7 +6,7 @@ import TestimonialSlider from './TestimonialSlider';
 import "slick-carousel/slick/slick.css";
 const Testimonial = () => {
     return (
-        <section className='bg-[#F4FAFA] py-[20px] md:py-[200px]' >
+        <section id='blog' className='bg-[#F4FAFA] py-[20px] md:py-[200px]' >
             <Container>
                 <Flex className="flex flex-col md:flex-row justify-center md:justify-between items-center">
                  <div>

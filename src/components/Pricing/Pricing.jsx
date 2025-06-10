@@ -49,7 +49,7 @@ const item = [
 
 const Pricing = () => {
     return (
-        <section className='py-[140px]'>
+        <section id='pages' className='py-[140px]'>
             <Container>
                 <div className='text-center'>
                     <h2 className='md:w-[624px] font-bold text-[34px] md:text-[46px] text-title font-primary m-auto
@@ -252,7 +252,7 @@ const Pricing = () => {
 
                             <div className='my-[40px] px-[60px]'>
                                 {itmes.features.map((feature, i) => (
-                                    <div key={i} className='flex mb-[26px]'>
+                                    <div key={i} className=' flex mb-[26px]'>
                                         <div className='w-[24px] h-[24px] rounded-full bg-[#E8F2FA] flex justify-center items-center'>
                                             <GiCheckMark className='text-sm' />
                                         </div>
