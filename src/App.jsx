@@ -11,6 +11,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import TestimonialSlider from "./components/Testimonial/TestimonialSlider";
 import Query from "./components/Query/Query";
 import Futter from "./components/Futter/Futter";
+import BackToTop from "./components/BackToTop/BackToTop";
 function App() {
   return (
     <>
@@ -18,8 +19,6 @@ function App() {
           <Navbar></Navbar>
           <Banner></Banner>
         </Header>
-        
-        
         <Content></Content>
         <Features />
         <Integrations />
@@ -28,7 +27,8 @@ function App() {
         <Pricing />
         <Testimonial />
         <Query />
-        <Futter/>
+        <Futter />
+        <BackToTop />
         
     </>
   );

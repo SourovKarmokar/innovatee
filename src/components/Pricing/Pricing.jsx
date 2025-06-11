@@ -250,13 +250,13 @@ const Pricing = () => {
                                 </p>
                             </div>
 
-                            <div className='my-[40px] px-[60px]'>
+                            <div className=' my-[40px] px-[60px]'>
                                 {itmes.features.map((feature, i) => (
-                                    <div key={i} className=' flex mb-[26px]'>
+                                    <div key={i} className=' flex mb-[15px] md:mb-[26px]'>
                                         <div className='w-[24px] h-[24px] rounded-full bg-[#E8F2FA] flex justify-center items-center'>
                                             <GiCheckMark className='text-sm' />
                                         </div>
-                                        <p className='font-secondary text-discription text-lg font-medium ml-[22px] group-hover:text-white duration-300 ease-in'>
+                                        <p className=' font-secondary text-discription text-lg font-medium ml-[22px] group-hover:text-white duration-300 ease-in'>
                                             {feature}
                                         </p>
                                     </div>
