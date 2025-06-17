@@ -11,7 +11,7 @@ const Navbar = () => {
   }
   return (
     <div className="relative" >
-        <div className="fixed top-0 left-0 w-full py-8 px-8 z-[50]">
+        <div className="  w-full py-8 px-8 z-[50]">
       <Container>
         <div className="md:flex justify-between items-center">
           <ScrollSpy activeClass="">
